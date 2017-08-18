@@ -1,0 +1,174 @@
+/*********** 1. Básicos ***********/
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background-image: url(../images/bg-body.png);
+  margin: 0;
+}
+
+ul, ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  width: 100%;
+}
+/*********** 2. HOME***********/
+.banner, .main-nav{
+  display: none;
+}
+
+.container{
+  margin: 0 15px;
+}
+
+.logo{
+  display: block;
+  max-width: 180px;
+  margin: 15px auto 30px;
+  border-radius: 50%;
+  border: solid 1px black;
+}
+
+.toggle-nav{
+  display: block;
+  margin: 0 auto 15px;
+  width: 45px;
+  text-align: center;
+  padding: 15px; 0;
+  background-color: black;
+  color: white;
+  font-size: 1.2em;
+}
+
+.main-nav a{
+  display: block;
+  background-color: #222;
+  color: white;
+  font-size: 1.4em;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 0;
+  border-bottom: solid 3px white;
+}
+
+.product a{
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.main-footer a{
+  display: block;
+  background-color: rgb(164, 11, 11);
+  color: white;
+  padding: 15px 20px;
+  border-bottom: solid 2px white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*********** 3. media queries ***********/
+@media (min-width: 700px) {
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .toggle-nav{
+    display: none;
+  }
+  .main-nav{
+    display: block !important;
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+  .main-nav li{
+    width: 15%;
+    margin: 0 0.83%;
+    float: left;
+  }
+  .main-nav a{
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1em;
+    border: none;
+  }
+  .banner{
+    display: block;
+    margin-left: 0.83%;
+    margin-right: 0.83%;
+  }
+  .vip-products{
+    overflow: hidden;
+  }
+  .product{
+    width: 48.34%;
+    margin-left: 0.83%;
+    margin-right: 0.83%;
+    margin-top: 40px;
+    float: left;
+  }
+  .main-footer{
+    text-align: center;
+    background-color: rgb(164, 11, 11);
+    padding: 30px 0;
+    border-radius: 15px 15px 0 0;
+
+  }
+  .main-footer li{
+    display: inline-block;
+  }
+  .main-footer a{
+    border-bottom: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-right: solid 1px white;
+  }
+  .main-footer .last{
+    border-right: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container{
+    max-width: 1200px;
+  }
+  .banner{
+    width: 98.33%;
+    margin: auto;
+  }
+  .product{
+    width: 31.67%;
+  }
+  .main-footer{
+    text-align: center;
+    background-color: rgb(164, 11, 11);
+    margin-bottom: 20px;
+    padding: 30px 0 30px;
+    border-radius: 20px 0;
+  }
+  .main-footer li{
+    display: inline-block;
+  }
+  .main-footer a{
+    width: 98.33%;
+    padding: 0;
+    padding: 5px 10px;
+    border-bottom: none;
+    border-right: solid 2px white;
+  }
+   .last{
+    border: none!important;
+  }
+}
